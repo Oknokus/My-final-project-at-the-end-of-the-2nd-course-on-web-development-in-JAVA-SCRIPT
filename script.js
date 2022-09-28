@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // обьект песен
 const song = {
     grasshopper:
@@ -626,4 +625,4 @@ window.addEventListener('keydown', playNote);
    
 
 
->>>>>>> 2719c38f05ff3c158c69d27a75db1948bd7e8cc7
+
