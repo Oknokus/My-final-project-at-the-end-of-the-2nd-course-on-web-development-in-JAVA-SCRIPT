@@ -52,3 +52,5 @@ window.onhashchange = function(e) {
     error: onError,
   }) 
 }
+
+
