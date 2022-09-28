@@ -1,0 +1,369 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://fe.it-academy.by/JQ/jquery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;600&family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Piano</title>
+  </head>
+
+  <body>
+    <div>
+      <img src='/screensaver/screensaver.png' id='IBall'>
+    </div>
+    <section>
+      <header class="header">
+        <div class="header__white">
+        </div>
+        <div class="header_wrapper">
+        </div>
+        </div>
+        <div class="header__black">
+          <h1>PIANO ON KEYBOARD</h1>
+        </div>
+      </header>
+    </section>
+    <serction class="main">
+      <div class="wrapper__grey">
+        <div class="items">
+          <div class="piano">
+            <div class="button">
+              <button class="record-button btn">Record</button>
+              <button id="button_repeat" class="record-button btn">Repeat</button>
+              <button id="button_stop" class="record-button btn">Stop</button>
+            </div>
+            <div class="itemsMain">
+              <div class="bgItem">
+                <p class="P_background">Background:</p>
+                <select class="bgchoice" id="bgchoice">
+                  <option value="#fff">Default</option>
+                  <option value="black">Black</option>
+                  <option value="grey">Grey</option>
+                </select>
+              </div>
+              <div class="volume">
+                <p class="volume_show" id="volume_show">100:</p>
+                <input id="volume" type="range" min="0" max="100" value="100">
+              </div>
+            </div>
+            <div id="div">
+              <select id="changeSong">
+                <option value="#">Choose a song to play</option>
+                <option value="grasshopper">В траве сидел кузнечик</option>
+                <option value="toys">Спят усталые игрушки</option>
+                <option value="herringbone">В лесу родиласи ёлочка!</option>
+              </select>
+            </div>
+            <div id="song">
+            </div>
+            <div class="piano-same">
+              <div class="nodePlayList">The notes you play will be displayed here!</div>
+              <div class="keys">
+                <div id="key65" data-key="65" class="key" data-note="C">
+                  <span class="designation">A (1)</span>
+                </div>
+                <div id="key87" data-key="87" class="key sharp" data-note="C#">
+                  <span class="designation">W</span>
+                </div>
+                <div id="key83" data-key="83" class="key" data-note="D">
+                  <span class="designation">S (2)</span>
+                </div>
+                <div id="key69" data-key="69" class="key sharp" data-note="D#">
+                  <span class="designation">E</span>
+                </div>
+                <div id="key68" data-key="68" class="key" data-note="E">
+                  <span class="designation">D (3)</span>
+                </div>
+                <div id="key70" data-key="70" class="key" data-note="F">
+                  <span class="designation">F (4)</span>
+                </div>
+                <div id="key84" data-key="84" class="key sharp" data-note="F#">
+                  <span class="designation">T</span>
+                </div>
+                <div id="key71" data-key="71" class="key" data-note="G">
+                  <span class="designation">G (5)</span>
+                </div>
+                <div id="key89" data-key="89" class="key sharp" data-note="G#">
+                  <span class="designation">Y</span>
+                </div>
+                <div id="key72" data-key="72" class="key" data-note="A">
+                  <span class="designation">H (6)</span>
+                </div>
+                <div id="key85" data-key="85" class="key sharp" data-note="A#">
+                  <span class="designation">U</span>
+                </div>
+                <div id="key74" data-key="74" class="key" data-note="B">
+                  <span class="designation">J (7)</span>
+                </div>
+                <div id="key75" data-key="75" class="key" data-note="C">
+                  <span class="designation">K (8)</span>
+                </div>
+                <div id="key79" data-key="79" class="key sharp" data-note="C#">
+                  <span class="designation">O</span>
+                </div>
+                <div id="key76" data-key="76" class="key" data-note="D">
+                  <span class="designation">L (9)</span>
+                </div>
+                <div id="key80" data-key="80" class="key sharp" data-note="D#">
+                  <span class="designation">P</span>
+                </div>
+                <div id="key186" data-key="186" class="key" data-note="E">
+                  <span class="designation">; (10)</span>
+                </div>
+              </div>
+
+              <audio data-key="65" src="/audio/040.wav">c</audio>
+              <audio data-key="87" src="/audio/041.wav">c#</audio>
+              <audio data-key="83" src="/audio//042.wav">d</audio>
+              <audio data-key="69" src="/audio/043.wav">d#</audio>
+              <audio data-key="68" src="/audio/044.wav">e</audio>
+              <audio data-key="70" src="/audio/045.wav">f</audio>
+              <audio data-key="84" src="/audio/046.wav">f#</audio>
+              <audio data-key="71" src="/audio/047.wav">g</audio>
+              <audio data-key="89" src="/audio/048.wav">g#</audio>
+              <audio data-key="72" src="/audio/049.wav">a</audio>
+              <audio data-key="85" src="/audio/050.wav">a#</audio>
+              <audio data-key="74" src="/audio/051.wav">b</audio>
+              <audio data-key="75" src="/audio/052.wav">c</audio>
+              <audio data-key="79" src="/audio/053.wav">c#</audio>
+              <audio data-key="76" src="/audio/054.wav">d</audio>
+              <audio data-key="80" src="/audio/055.wav">d#</audio>
+              <audio data-key="186" src="/audio/056.wav">e</audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </serction>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__items">
+          <div class="footer__title">
+            <a class="" href="#"><img class="footer__img" src="/logo/logo.png" alt="Logo"></a>
+            <h2 class="footer__title-same">Made for entertainment purposes.</h2>
+          </div>
+          <div class="footer__grid">
+            <div class="footer__card1">
+              <div class="footer__info">
+                <p class="footer__p">
+                  <a id="mail" target="_blank" href="https://www.it-academy.by/">IT-Academy<br></a>
+                  Grodno<br>
+                  2022<br>
+                  <a id="mail" target="_blank" href="https://www.linkedin.com/">Ksukonko@mail.ru<br></a>
+                </p>
+              </div>
+            </div>
+            <div class="footer__card2">
+              <div class="footer__web">
+                <a href="https://www.facebook.com/ksukonko" target="_blank"><img class="footer__img" src="/messenger/facebook.gif" alt="facebook"></a>
+                <a href="#"><img class="footer__img" src="/messenger/skype.gif" alt="skype"></a>
+                <a href="#"><img class="footer__img" src="/messenger/twitter.gif" alt="twitter"></a>
+                <a href="https://vk.com/kirill.official1" target="_blank"><img class="footer__img-last" src="/messenger/yandex.gif" alt="yandex"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__button-text">
+        <p class="footer__button-text-same">All rights reserved ©</p>
+      </div>
+    </footer>
+
+
+    <script src="/index.js"></script>
+
+  </body>
+
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://fe.it-academy.by/JQ/jquery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;600&family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Piano</title>
+  </head>
+
+  <body>
+    <div>
+      <img src='/screensaver/screensaver.png' id='IBall'>
+    </div>
+    <section>
+      <header class="header">
+        <div class="header__white">
+        </div>
+        <div class="header_wrapper">
+        </div>
+        </div>
+        <div class="header__black">
+          <h1>PIANO ON KEYBOARD</h1>
+        </div>
+      </header>
+    </section>
+    <serction class="main">
+      <div class="wrapper__grey">
+        <div class="items">
+          <div class="piano">
+            <div class="button">
+              <button class="record-button btn">Record</button>
+              <button id="button_repeat" class="record-button btn">Repeat</button>
+              <button id="button_stop" class="record-button btn">Stop</button>
+            </div>
+            <div class="itemsMain">
+              <div class="bgItem">
+                <p class="P_background">Background:</p>
+                <select class="bgchoice" id="bgchoice">
+                  <option value="#fff">Default</option>
+                  <option value="black">Black</option>
+                  <option value="grey">Grey</option>
+                </select>
+              </div>
+              <div class="volume">
+                <p class="volume_show" id="volume_show">100:</p>
+                <input id="volume" type="range" min="0" max="100" value="100">
+              </div>
+            </div>
+            <div id="div">
+              <select id="changeSong">
+                <option value="#">Choose a song to play</option>
+                <option value="grasshopper">В траве сидел кузнечик</option>
+                <option value="toys">Спят усталые игрушки</option>
+                <option value="herringbone">В лесу родиласи ёлочка!</option>
+              </select>
+            </div>
+            <div id="song">
+            </div>
+            <div class="piano-same">
+              <div class="nodePlayList">The notes you play will be displayed here!</div>
+              <div class="keys">
+                <div id="key65" data-key="65" class="key" data-note="C">
+                  <span class="designation">A (1)</span>
+                </div>
+                <div id="key87" data-key="87" class="key sharp" data-note="C#">
+                  <span class="designation">W</span>
+                </div>
+                <div id="key83" data-key="83" class="key" data-note="D">
+                  <span class="designation">S (2)</span>
+                </div>
+                <div id="key69" data-key="69" class="key sharp" data-note="D#">
+                  <span class="designation">E</span>
+                </div>
+                <div id="key68" data-key="68" class="key" data-note="E">
+                  <span class="designation">D (3)</span>
+                </div>
+                <div id="key70" data-key="70" class="key" data-note="F">
+                  <span class="designation">F (4)</span>
+                </div>
+                <div id="key84" data-key="84" class="key sharp" data-note="F#">
+                  <span class="designation">T</span>
+                </div>
+                <div id="key71" data-key="71" class="key" data-note="G">
+                  <span class="designation">G (5)</span>
+                </div>
+                <div id="key89" data-key="89" class="key sharp" data-note="G#">
+                  <span class="designation">Y</span>
+                </div>
+                <div id="key72" data-key="72" class="key" data-note="A">
+                  <span class="designation">H (6)</span>
+                </div>
+                <div id="key85" data-key="85" class="key sharp" data-note="A#">
+                  <span class="designation">U</span>
+                </div>
+                <div id="key74" data-key="74" class="key" data-note="B">
+                  <span class="designation">J (7)</span>
+                </div>
+                <div id="key75" data-key="75" class="key" data-note="C">
+                  <span class="designation">K (8)</span>
+                </div>
+                <div id="key79" data-key="79" class="key sharp" data-note="C#">
+                  <span class="designation">O</span>
+                </div>
+                <div id="key76" data-key="76" class="key" data-note="D">
+                  <span class="designation">L (9)</span>
+                </div>
+                <div id="key80" data-key="80" class="key sharp" data-note="D#">
+                  <span class="designation">P</span>
+                </div>
+                <div id="key186" data-key="186" class="key" data-note="E">
+                  <span class="designation">; (10)</span>
+                </div>
+              </div>
+
+              <audio data-key="65" src="/audio/040.wav">c</audio>
+              <audio data-key="87" src="/audio/041.wav">c#</audio>
+              <audio data-key="83" src="/audio//042.wav">d</audio>
+              <audio data-key="69" src="/audio/043.wav">d#</audio>
+              <audio data-key="68" src="/audio/044.wav">e</audio>
+              <audio data-key="70" src="/audio/045.wav">f</audio>
+              <audio data-key="84" src="/audio/046.wav">f#</audio>
+              <audio data-key="71" src="/audio/047.wav">g</audio>
+              <audio data-key="89" src="/audio/048.wav">g#</audio>
+              <audio data-key="72" src="/audio/049.wav">a</audio>
+              <audio data-key="85" src="/audio/050.wav">a#</audio>
+              <audio data-key="74" src="/audio/051.wav">b</audio>
+              <audio data-key="75" src="/audio/052.wav">c</audio>
+              <audio data-key="79" src="/audio/053.wav">c#</audio>
+              <audio data-key="76" src="/audio/054.wav">d</audio>
+              <audio data-key="80" src="/audio/055.wav">d#</audio>
+              <audio data-key="186" src="/audio/056.wav">e</audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </serction>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__items">
+          <div class="footer__title">
+            <a class="" href="#"><img class="footer__img" src="/logo/logo.png" alt="Logo"></a>
+            <h2 class="footer__title-same">Made for entertainment purposes.</h2>
+          </div>
+          <div class="footer__grid">
+            <div class="footer__card1">
+              <div class="footer__info">
+                <p class="footer__p">
+                  <a id="mail" target="_blank" href="https://www.it-academy.by/">IT-Academy<br></a>
+                  Grodno<br>
+                  2022<br>
+                  <a id="mail" target="_blank" href="https://www.linkedin.com/">Ksukonko@mail.ru<br></a>
+                </p>
+              </div>
+            </div>
+            <div class="footer__card2">
+              <div class="footer__web">
+                <a href="https://www.facebook.com/ksukonko" target="_blank"><img class="footer__img" src="/messenger/facebook.gif" alt="facebook"></a>
+                <a href="#"><img class="footer__img" src="/messenger/skype.gif" alt="skype"></a>
+                <a href="#"><img class="footer__img" src="/messenger/twitter.gif" alt="twitter"></a>
+                <a href="https://vk.com/kirill.official1" target="_blank"><img class="footer__img-last" src="/messenger/yandex.gif" alt="yandex"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__button-text">
+        <p class="footer__button-text-same">All rights reserved ©</p>
+      </div>
+    </footer>
+
+
+    <script src="/index.js"></script>
+
+  </body>
+
+</html>
+>>>>>>> 2719c38f05ff3c158c69d27a75db1948bd7e8cc7
