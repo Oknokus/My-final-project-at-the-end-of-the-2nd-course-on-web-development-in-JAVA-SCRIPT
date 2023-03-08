@@ -1,6 +1,7 @@
 {
   "name": "myproject",
   "version": "1.0.0",
+  "homepage": "https://oknokus.github.io/Piano.html",
   "description": "",
   "main": "script.js",
   "dependencies": {
@@ -142,7 +143,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server"    
   },  
   "author": "",
   "license": "ISC"
