@@ -489,24 +489,6 @@ footer {
   cursor: pointer;
 }
 
-.video_start {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  display: block;
-  top: 0;
-  left: 0;
-  margin-top: 0px;
-}
-
-.header_index {
-  position: relative;
-  width: 100%;
-  min-height: 1080px;
-  overflow: hidden;
-  margin-top: -20px;
-}
-
 /* SongArr format style end */
 
 /* Button for main style strart  */
@@ -569,30 +551,6 @@ footer {
   background-color: transparent;
   transform: scale(1.1);
   box-shadow: 0px 2px 7px rgba(185, 176, 176, 0.74);
-}
-
-#index {
-  padding: 0.6rem 1.5rem;  
-  border-radius: 25px;
-  border: 1px solid #fff;
-  color: #efefef;
-  background-color: transparent;
-  font-size: 1.6rem;
-  left: 45%;
-  top: 15%;
-  z-index: 1000;
-  position: absolute;
-  transition: all ease-in-out 1s;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-#index:hover {
-  background-color: transparent;
-  transform: scale(1.1);
-  box-shadow: 0px 2px 7px rgba(185, 176, 176, 0.74);
-  color: #fff;
-  opacity: 1;
 }
 
 /* Button for main style strart  */
