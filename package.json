@@ -1,7 +1,7 @@
 {
   "name": "my-final-project-at-the-end-of-the-2nd-course-on-web-development-in-java-script",
   "version": "1.0.0",
-  "homepage": "https://github.com/Oknokus/My-final-project-at-the-end-of-the-2nd-course-on-web-development-in-JAVA-SCRIPT/tree/gh-pages",
+  "homepage": "https://oknokus.github.io/My-final-project-at-the-end-of-the-2nd-course-on-web-development-in-JAVA-SCRIPT/index.html",
   "description": "",
   "main": "script.js",
   "scripts": {
@@ -17,3 +17,4 @@
     "url": "https://github.com/Oknokus/My-final-project-at-the-end-of-the-2nd-course-on-web-development-in-JAVA-SCRIPT/issues"
   } 
 }
+
